@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.heading-class{
+    width: 100%;
+    height: 40px;
+    background-color: #007bff;
+    min-height: 130px;
+    .title{
+        padding-top: 45px;
+        padding-left: 50px;
+        color: white;
+    }
+}
+.container-div{
+    padding: 30px;
+}
+.submit-div{
+    padding: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+   .detect-face-button{
+        margin-left: 25px;
+        .button-div{
+            border-radius: 20px;
+            width: 250px;
+            height: 45px;
+        }
+    }
+}
+

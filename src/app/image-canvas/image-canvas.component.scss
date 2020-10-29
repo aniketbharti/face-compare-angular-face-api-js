@@ -1,0 +1,48 @@
+.card-class{
+    height: inherit;
+    margin-top: 15px;
+    .padding-class{
+        padding-left: 2.3vw;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    .canvas-class{
+        width: 41vw;
+        height: 60vh;
+    }
+    .submit-div{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        .input-div{
+            input[type="file"] {
+                display: none;
+            }
+            .custom-file-upload {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 12px;
+                border-radius: 20px;
+                width: 130px;
+                cursor: pointer;
+            }
+        }
+        .detect-face-button{
+            margin-left: 25px;
+            .button-div{
+                border-radius: 20px;
+                width: 130px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card-class{
+        .canvas-class{
+            width: 85vw;
+            height: 50vh;
+        }
+    }
+
+  }

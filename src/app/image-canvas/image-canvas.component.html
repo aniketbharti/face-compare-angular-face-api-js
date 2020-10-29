@@ -1,0 +1,19 @@
+<div class="card card-class mat-elevation-z12">
+    <h5 class="card-header"><i>{{inputData.moduleName}}</i></h5>
+    <div class="card-body padding-class">
+        <div class="canvas-container canvas-class">
+            <canvas #inputCanvas class="canvas-class"></canvas>
+        </div>
+        <div class="submit-div">
+            <div class="input-div">
+                <label [for]="'file-upload' + inputData.moduleName" class="custom-file-upload btn btn-primary">
+                    <i class="fa fa-cloud-upload" style="padding-right: 10px;"></i>Upload
+                </label>
+                <input [id]="'file-upload' + inputData.moduleName" type="file" multiple="false" accept="image/x-png,image/gif,image/jpeg" #files (change)="checkFormat()"/>
+            </div>
+            <div class="detect-face-button" *ngIf="currentFile != null">
+                <button type="button" class="btn btn-primary button-div" (click)="detectFace()">Detect Face</button>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,21 @@
+<mat-toolbar class="mat-elevation-z5">
+    <img src="../../assets/logo.PNG" height="56px" width="120px">
+</mat-toolbar>
+<div class="heading-class">
+    <h3 class="title"><i>Compare Faces</i></h3>
+</div>
+<div class="container-fluid">
+    <div class="row container-div">
+        <div class="col-lg-6">
+            <app-image-canvas [inputData]="inputDataImage1" (faceDetectedEvent)="faceDetectedEventFunc($event)"></app-image-canvas>
+        </div>
+        <div class="col-lg-6">
+            <app-image-canvas [inputData]="inputDataImage2" (faceDetectedEvent)="faceDetectedEventFunc($event)"></app-image-canvas>
+        </div>
+    </div>
+    <div class="submit-div">
+       <div class="detect-face-button">
+        <button type="button" class="btn btn-primary button-div" (click)="compareFaces()">Compare Face</button>
+    </div>
+</div>
+</div>
